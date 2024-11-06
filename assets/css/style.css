@@ -207,7 +207,7 @@ a {
 
 /* header-banner-section */
 .home-header-section {
-  background: url('../images/banner-img.jpg');
+  background: url('../images/dgs_heroimg.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1064,6 +1064,18 @@ a {
   color: #000;
   font-weight: 400;
   padding-left: 3px;
+}
+
+@media (max-width: 768px) {
+  .footer-section .footer-heading {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-section .footer-list-ul a {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .footer-section .footer-list-ul li {
@@ -2209,7 +2221,7 @@ hr {
 }
 
 .happy-clients-section2 .about-border {
-  display: block;
+  display: none;
   width: 22%;
   height: 1px;
   background: var(--e-global-color-accent);
@@ -2314,9 +2326,9 @@ hr {
   margin-bottom: 43px;
 }
 
-/* footer-index */
+/* footindex */
 .footer-index-img {
-  background: url(../images/footer-index-img.jpg);
+  background: url(../images/foot.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -2346,6 +2358,19 @@ hr {
   font-weight: 400;
   margin-bottom: 66px;
   margin-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .footer-index-img .footer-heading {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-index-img .footer-list-ul a {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .footer-section .sencare-logo-footer {

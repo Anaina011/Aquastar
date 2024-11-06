@@ -562,6 +562,7 @@ a {
   line-height: 26px;
   display: inline-block;
   transition: all 0.3s ease-out;
+  border: 2px solid #fff;
 }
 
 .form-section .primary-button a {

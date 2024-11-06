@@ -1007,6 +1007,7 @@ a {
 
 /* Footer-Section */
 .footer-section {
+  background: linear-gradient(to left, #007BC6, #86cbdf, #ffffff);
   padding: 88px 0;
 }
 
@@ -1051,7 +1052,7 @@ a {
 }
 
 .footer-section .footer-heading {
-  color: #02B9ED;
+  color: #000;
   font-weight: 400;
   margin-bottom: 30px;
   margin-top: 10px;
@@ -1070,7 +1071,7 @@ a {
 }
 
 .footer-section .footer-list-ul a:hover {
-  color: #02B9ED;
+  color: #fff;
 }
 
 .footer-section .column {
@@ -1102,12 +1103,13 @@ a {
 }
 
 .footer-section .contact-info-heading .footer-margin-bottom a {
-  color: #02B9ED;
+  color: #000;
+  font-weight: 500;
 }
 
 
 hr {
-  margin-top: 0;
+  margin-bottom: 0;
   border-top: 2px solid #02B9ED;
 }
 

@@ -1008,7 +1008,8 @@ a {
 /* Footer-Section */
 .footer-section {
   background: linear-gradient(to left, #007BC6, #86cbdf, #ffffff);
-  padding: 88px 0;
+  padding-top: 88px;
+  padding-bottom: 20px;
 }
 
 .footer-section .footer-text {
@@ -1075,6 +1076,11 @@ a {
   .footer-section .footer-list-ul a {
     display: flex;
     justify-content: center;
+  }
+
+  .footer-section .social-icons i {
+    color: #ffffff;
+    border: 1px solid #ffffff;
   }
 }
 
@@ -2332,7 +2338,8 @@ hr {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 254px 0 132px;
+  padding-top: 254px;
+  padding-bottom: 5px;
   margin-top: -136px !important;
 }
 
@@ -2348,9 +2355,13 @@ hr {
 .footer-index-img .footer-list-ul a {
   font-size: 16px;
   line-height: 30px;
-  color: var(--e-global-color-text);
+  color: #000;
   font-weight: 400;
   padding-left: 3px;
+}
+
+.footer-index-img .footer-list-ul li :hover {
+color: #02B9ED;
 }
 
 .footer-index-img .footer-heading {
@@ -2360,6 +2371,10 @@ hr {
   margin-top: 10px;
 }
 
+.footer-index-img .social-icons i {
+  color: #02B9ED;
+  border: 1px solid #02B9ED;
+}
 
 @media (max-width: 768px) {
   .footer-index-img .footer-heading {
@@ -2371,6 +2386,7 @@ hr {
     display: flex;
     justify-content: center;
   }
+  
 }
 
 .footer-section .sencare-logo-footer {
@@ -3025,7 +3041,7 @@ hr {
 
 .faq-form-section .carousel-card-form {
   background: url(../images/faq-section-img2.jpg) !important;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat !important;
   background-size: cover;
   background-position: center;
   margin-bottom: 0;
@@ -3557,4 +3573,15 @@ textarea {
 .login-form .login-card .select-option option {
   font-size: 16px;
   background-color: var(--e-global-color-dark-grayish-blue);
+}
+
+
+
+
+
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  padding-top: 3%;
 }

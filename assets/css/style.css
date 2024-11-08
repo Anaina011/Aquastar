@@ -2009,6 +2009,8 @@ hr {
 }
 
 .offer-section1 .offer-section-box p {
+  width: 100% !important;
+
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -2334,12 +2336,12 @@ hr {
 
 /* footindex */
 .footer-index-img {
-  background: url(../images/foot.png);
+  background: url(../images/footer_overlay.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding-top: 254px;
-  padding-bottom: 5px;
+  padding-bottom: 0px;
   margin-top: -136px !important;
 }
 
@@ -2393,10 +2395,19 @@ color: #02B9ED;
   margin-bottom: 37px;
 }
 
+/* .footer-section .sencare-logo-footer img {
+  width: 220px;
+  height: 120px;
+} */
+
 .footer-section .sencare-left-footer {
   top: -42px;
   position: absolute;
   left: 126px;
+}
+
+.footer_img img{
+width: 80%;
 }
 
 .footer-img-section .sencare-logo1 {
@@ -2863,9 +2874,10 @@ color: #02B9ED;
 .contact-offer-section .offer-section-box {
   background: var(--e-global-color-white);
   box-shadow: 0px 6px 38px 0 #dae0e5;
-  padding: 37px 60px 76px;
+  /* padding: 37px 60px 76px; */
   border-radius: 20px;
   text-align: center;
+
 }
 
 .contact-offer-section .offer-section-box .offer-section-inner {
@@ -3262,7 +3274,21 @@ button {
   border-radius: 36px;
 }
 
-.img-fluid {
+.navbar-brand .img-fluid {
+  max-width: 60%;
+  height: auto;
+}
+
+/* .navbar-expand-lg a {
+  width: 70%;
+} */
+
+/* .img-fluid {
+  max-width: 100%;
+  height: auto;
+} */
+
+.service-figure-mb .img-fluid {
   max-width: 100%;
   height: auto;
 }
@@ -3582,6 +3608,64 @@ textarea {
 
 .copyright {
   display: flex;
-  justify-content: center;
+
+  justify-content:space-between;
   padding-top: 3%;
+}
+
+/* .privacy_policy {
+  background: linear-gradient(to bottom, #007BC6, #86cbdf, #ffffff,#ffffff, #ffffff00);
+} */
+
+.privacy_policy .carousel-card-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding-left: 5%;
+  padding-bottom: -55%;
+  margin-bottom: 15%;
+}
+
+.privacy_policy .carousel-card-form h5 {
+  display: flex;
+  text-align: start;
+  color: #02B9ED;
+  font-size: 125%;
+  margin-top: 2%;
+}
+
+.privacy_policy .carousel-card-form p {
+  display: flex;
+  text-align: start;
+  color: #000;
+  font-size: 100%;
+  margin-bottom: 1%;
+}
+
+.privacy_policy .carousel-card-form li {
+  font-size: 100%;
+  line-height: 150%;
+}
+
+/* .faq-form-section .carousel-card-form .privacy {
+  background: linear-gradient(to bottom, #007BC6, #86cbdf, #ffffff,#ffffff, #ffffff00);
+  background-repeat: no-repeat !important;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 0;
+  padding: 84px 12px 100px;
+} */
+
+
+
+
+.home_about_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home_about {
+  background: linear-gradient(to top, #007ac680, #86ccdf8a, #ffffff);
 }

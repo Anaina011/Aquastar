@@ -1,54 +1,53 @@
 <?php
-$name= $_POST['fname'];
-$emailHelp= $_POST['email'];
-$lastName= $_POST['lname'];
-$phone= $_POST['phone'];
-$comments=$_POST['message'];
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $fname = htmlspecialchars(trim($_POST['fname']));
+    $lname = htmlspecialchars(trim($_POST['lname']));
+    $email = htmlspecialchars(trim($_POST['email']));
+    $phone = htmlspecialchars(trim($_POST['phone']));
+    $message = htmlspecialchars(trim($_POST['message']));
 
-if(isset($name) && isset($phone) && isset($emailHelp))
-{
-	global $to_email,$vpb_message_body,$headers;
-	$to_email="anainass.id@gmail.com";
-	// $email_subject="Inquiry From Contact Page";
-	$vpb_message_body = nl2br("Dear Admin,\n
-	The user whose detail is shown below has sent this message from ".$_SERVER['HTTP_HOST']." dated ".date('d-m-Y').".\n
-	
-	name: ".$name."\n
-	Last Name: ".$lastName."\n
-	Email Address: ".$emailHelp."\n
-    Phone: ".$phone."\n
+    // Validation
+    if (empty($fname) || empty($lname) || empty($email) || empty($phone) || empty($message)) {
+        echo "<script type='text/javascript'>alert('All fields are required.'); window.location.href = 'index.html#contact_section';</script>";
+        exit;
+    }
 
-	Message: ".$comments."\n
-	User Ip:".getHostByName(getHostName())."\n
-	Thank You!\n\n");
-	
-	//Set up the email headers
-    $headers    = "From: $name <$emailHelp>\r\n";
-    $headers   .= "Content-type: text/html; charset=iso-8859-1\r\n";
-    $headers   .= "Message-ID: <".time().rand(1,1000)."@".$_SERVER['SERVER_NAME'].">". "\r\n"; 
-   
-	 if(@mail($to_email, $vpb_message_body, $headers))
-		{
-			  $status='Success';
-			//Displays the success message when email message is sent
-			  $output="Congrats ".$name.", your email message has been sent successfully! We will get back to you as soon as possible. Thanks.";
-		} 
-		else 
-		{
-			 $status='error';
-			 //Displays an error message when email sending fails
-			  $output="Sorry, your email could not be sent at the moment. Please try again or contact this website admin to report this error message if the problem persist. Thanks.";
-		}
-		
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "<script type='text/javascript'>alert('Invalid email format.'); window.location.href = 'index.html#contact_section';</script>";
+        exit;
+    }
+
+    // Email configuration
+    $to = "anainass.id@gmail.com";
+    $subject = "New Contact Request";
+    $body = "
+    <html>
+    <head>
+        <title>Contact Request</title>
+    </head>
+    <body>
+        <p>Dear Admin,</p>
+        <p>A new contact request has been submitted with the following details:</p>
+        <p><strong>First Name:</strong> $fname</p>
+        <p><strong>Last Name:</strong> $lname</p>
+        <p><strong>Email:</strong> $email</p>
+        <p><strong>Phone:</strong> $phone</p>
+        <p><strong>Message:</strong> $message</p>
+        <p>Thank you!</p>
+    </body>
+    </html>
+    ";
+
+    // Headers for HTML email
+    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+    $headers .= "From: $email" . "\r\n";
+
+    // Send email
+    if (mail($to, $subject, $body, $headers)) {
+        echo "<script type='text/javascript'>alert('Email sent successfully.'); window.location.href = 'index.html#contact_section';</script>";
+    } else {
+        echo "<script type='text/javascript'>alert('Failed to send message. Please try again later.'); window.location.href = 'index.html#contact_section';</script>";
+    }
 }
-else{
-
-	echo $name;
-	$status='error';
-	$output="please fill require fields";
-	
-	}
-echo json_encode(array('status'=> $status, 'msg'=>$output));
-
-
 ?>

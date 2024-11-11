@@ -232,7 +232,7 @@ a {
 
 /* header-banner-section */
 .home-header-section {
-  background: url('../images/dgs_img_hero.png');
+  /* background: url('../images/dgs_img_hero.png'); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -303,6 +303,7 @@ a {
 .home-banner-section .banner-container-box .home-banner-text h1 {
   color: var(--e-global-color-white);
   margin-bottom: 26px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.651);
 }
 
 .home-banner-section .banner-container-box .home-banner-text .banner-paragraph {
@@ -1912,6 +1913,12 @@ hr {
   left: 142px;
 }
 
+@media screen and (max-width: 1440px) {
+  .footer-index-img {
+      padding: 122px 0 12px !important;
+  }
+}
+
 .sencare-section .cyber-content .accordian-inner .accordion-card .collapsed:before {
   content: "\2b";
   font-size: 28px;
@@ -2462,6 +2469,7 @@ color: #02B9ED;
   }
   
 }
+
 
 .footer-section .sencare-logo-footer {
   margin-bottom: 37px;
@@ -3765,6 +3773,10 @@ textarea {
   padding-top: 3%;
 }
 
+.copyright .footer-text {
+  color: #bdbbbb;
+}
+
 @media (max-width: 991px) { 
   .copyright {
     display: flex;
@@ -4133,3 +4145,73 @@ textarea {
   display: none;
 }
 
+
+
+
+
+
+#myVideo {
+    width: 100%;
+    height: 60rem;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    overflow: hidden;
+ }
+
+ @media (max-width: 1500px) {
+  #myVideo {
+    width: 100%;
+    height: 50rem;
+    overflow: hidden;
+ }
+ }
+
+ @media (max-width: 991px) {
+  #myVideo {
+    height: 40rem;
+ }
+ }
+
+ @media (max-width: 767px) {
+  #myVideo {
+    height: 30rem;
+ }
+ }
+
+
+ body, html {
+  overflow-x: hidden;
+}
+
+.home-banner-section {
+  overflow: hidden;
+}
+
+
+
+ .nav_index li a {
+  color: #ffffff !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.582);
+ }
+
+
+
+
+ .logo_desc {
+  color: #fff;
+  font-size: 105%;
+  padding: 2%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.582);
+ }
+
+ @media (max-width: 767px) { 
+  .logo_desc {
+text-align: center;
+font-size: 100%;
+  }
+ }

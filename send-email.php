@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Email configuration
-    $to = "anainass.id@gmail.com"; // Replace with your admin email
+    $to = "info@dehonouredglobalservices.co.uk"; // Replace with your admin email
     $subject = "New Consultation Request";
     $body = "
     <html>

@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Email configuration
-    $to = "anainass.id@gmail.com";
+    $to = "info@dehonouredglobalservices.co.uk";
     $subject = "New Contact Request";
     $body = "
     <html>

@@ -116,12 +116,90 @@
             </div>
             <div class="service_card_content">
                 <h6>Pool Cleaning</h6>
-                <p>we understand that a <br> clean pool is essential for <br> a safe and enjoyable <br> swimming experience.</p>
+                <p>we understand that a <br> clean pool is essential for <br> a safe and enjoyable <br> swimming
+                    experience.</p>
             </div>
         </div>
-        
+
     </div>
 
+
+
+    <!-- home about -->
+    <div class="home_about_sec">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 home_about_left">
+                <h3>We Build Everything As Your <span style="color: #0976db;">Dream</span></h3>
+                <p>At AQUA STAR TRADING & POOLS SOLUTIONS, we take pride in being a leading provider of high-quality
+                    spare parts for swimming pools and water fountains. We also offer construction and maintenance
+                    services for indoor and outdoor swimming pools, facilities and pool enclosures, as well as spas,
+                    water features, waterfalls, steam rooms, and saunas across Qatar. With years of experience and a
+                    deep understanding of the aquatic industry, we are committed to enhancing the functionality and
+                    longevity of your water features, ensuring a healthier and happier environment for our clients.</p>
+
+                <p>Our state-of-the-art facilities and dedicated team of professionals enable us to deliver exceptional
+                    products and services tailored to meet the unique needs of schools, hotels, residential villas,
+                    apartments, and towers. Our integrated approach encompasses research and development, production,
+                    quality control, and training and support, providing a seamless one-stop solution for all your
+                    aquatic requirements.</p>
+
+                <p>As a responsible and quality supplier of swimming pool spa LED light fittings and spare parts, we
+                    source components and products from Spain, the USA, Japan, Taiwan, Korea, India, and China. We
+                    partner with various industry-leading manufacturers to bring you the latest in pool technology.</p>
+
+                    <div class="progress-section">
+                        <div class="progress-bar-container">
+                            <span>25+ Years of Experience</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-percentage="60"></div>
+                            </div>
+                            <div class="progress-line"></div> <!-- Horizontal line below the progress bar -->
+                        </div>
+                        <div class="progress-bar-container">
+                            <span>200+ Clients Satisfied by Us</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-percentage="75"></div>
+                            </div>
+                            <div class="progress-line"></div> <!-- Horizontal line below the progress bar -->
+                        </div>
+                    </div>
+                    
+                    
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 home_about_left">
+                <img src="assets/img/home_about.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const progressBars = document.querySelectorAll(".progress-fill");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const progressFill = entry.target;
+                const percentage = progressFill.getAttribute("data-percentage");
+                progressFill.style.width = percentage + "%";
+                observer.unobserve(progressFill); // Optional: stop observing once animated
+            }
+        });
+    }, {
+        threshold: 0.5  // Adjust this value based on when you want the animation to trigger
+    });
+
+    progressBars.forEach(bar => {
+        observer.observe(bar);
+    });
+});
+
+
+</script>
 
 
     <script src="assets/js/navbar.js" defer></script>

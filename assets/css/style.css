@@ -379,6 +379,12 @@ header {
     justify-content: center;
     align-items: center;
     padding: 3%;
+    height: 55%;
+}
+
+.service_card_content h6 {
+    font-size: 130%;
+    font-weight: 600;
 }
 
 .service_card_content p {

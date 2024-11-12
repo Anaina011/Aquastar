@@ -147,24 +147,26 @@
                     source components and products from Spain, the USA, Japan, Taiwan, Korea, India, and China. We
                     partner with various industry-leading manufacturers to bring you the latest in pool technology.</p>
 
-                    <div class="progress-section">
-                        <div class="progress-bar-container">
-                            <span>25+ Years of Experience</span>
-                            <div class="progress-bar">
-                                <div class="progress-fill" data-percentage="60"></div>
-                            </div>
-                            <div class="progress-line"></div> <!-- Horizontal line below the progress bar -->
+                <div class="progress-section">
+                    <div class="progress-bar-container">
+                        <span>25+ Years of Experience</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-percentage="60"></div>
                         </div>
-                        <div class="progress-bar-container">
-                            <span>200+ Clients Satisfied by Us</span>
-                            <div class="progress-bar">
-                                <div class="progress-fill" data-percentage="75"></div>
-                            </div>
-                            <div class="progress-line"></div> <!-- Horizontal line below the progress bar -->
-                        </div>
+                        <div class="progress-line"></div> <!-- Horizontal line below the progress bar -->
                     </div>
-                    
-                    
+                    <div class="progress-bar-container">
+                        <span>200+ Clients Satisfied by Us</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-percentage="75"></div>
+                        </div>
+                        <div class="progress-line"></div> <!-- Horizontal line below the progress bar -->
+                    </div>
+
+                    <button class="aqua_button">Explore About Us →</button>
+                </div>
+
+
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 home_about_left">
                 <img src="assets/img/home_about.png" alt="">
@@ -176,30 +178,52 @@
 
 
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-    const progressBars = document.querySelectorAll(".progress-fill");
+    <!-- strong services -->
+    <div class="home_services">
+        <div class="home_service_sec1">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 home_service_sec1_content">
+                    <h3>We Provide Strong Services For You</h3>
+                    <p>Explore our range of expert services designed to meet all your pool and trading needs. From
+                        professional
+                        pool design, construction, and maintenance to reliable trading of top-grade pool equipment and
+                        accessories, we offer everything under one roof.</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 home_service_sec1_btn">
+                    <button>View All <img src="assets/img/btn_icon.png" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const progressFill = entry.target;
-                const percentage = progressFill.getAttribute("data-percentage");
-                progressFill.style.width = percentage + "%";
-                observer.unobserve(progressFill); // Optional: stop observing once animated
-            }
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const progressBars = document.querySelectorAll(".progress-fill");
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const progressFill = entry.target;
+                        const percentage = progressFill.getAttribute("data-percentage");
+                        progressFill.style.width = percentage + "%";
+                        observer.unobserve(progressFill); // Optional: stop observing once animated
+                    }
+                });
+            }, {
+                threshold: 0.5  // Adjust this value based on when you want the animation to trigger
+            });
+
+            progressBars.forEach(bar => {
+                observer.observe(bar);
+            });
         });
-    }, {
-        threshold: 0.5  // Adjust this value based on when you want the animation to trigger
-    });
-
-    progressBars.forEach(bar => {
-        observer.observe(bar);
-    });
-});
 
 
-</script>
+    </script>
 
 
     <script src="assets/js/navbar.js" defer></script>

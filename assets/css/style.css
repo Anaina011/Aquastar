@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+}
+
+
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Tilt+Neon&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
@@ -330,4 +335,70 @@ header {
         font-size: 80%;
       }
     
+}
+
+
+
+/* service_cards */
+
+.service_cards_sec {
+    display: flex;
+    overflow-x: scroll;
+    padding: 8%; /* Adds padding on both sides */
+    scroll-snap-type: x mandatory;
+    gap: 1rem; /* Space between cards */
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.service-cards-carousel {
+    display: flex;
+    align-items: center;
+}
+
+.service_card {
+    border: 1px solid #00000049;
+    border-radius: 30px;
+    width: max-content;
+    padding: 1%;
+    /* margin-right: 2%; */
+    scroll-snap-align: start;
+}
+
+.secvice_card_img{
+    width: 100%;
+    padding-bottom: 2%;
+}
+
+.service_card_content {
+    background-color: var(--theme-color);
+    color: var(--theme-color-w);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+}
+
+.service_card_content p {
+    text-align: center;
+}
+
+.service_cards_sec::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari, Opera */
+}
+
+.service_cards_sec::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.service_cards_sec::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.service_cards_sec {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }

@@ -613,14 +613,14 @@ header {
     font-size: 120%;
 }
 
-.home_service_sec1_btn button :hover{
-    background-color: #00000000;
-    border: 1px solid #ffffff;
+.home_service_sec1_btn button:hover{
+    background-color: #000000;
+    border: 1px solid #000000;
+    transition: 1s;
     border-radius: 31px;
     padding: 1% 5%;
     width: max-content;
     color: var(--theme-color-w);
-    font-size: 120%;
 }
 
 @media (max-width: 1200px) {

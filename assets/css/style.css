@@ -670,7 +670,7 @@ header {
 
 .home_service_card1 {
     width: 100%;
-    height: max-content;
+    height: 420px;
     background: url(../img/home_service_card_bg.png);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -678,6 +678,7 @@ header {
     overflow: hidden;
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
+    position: relative;
 }
 
 .home_service_card1 img {
@@ -706,13 +707,15 @@ header {
     border: none;
     padding: 8px 19px;
     border-radius: 30px;
+    top: 72%;
+    position: absolute;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1426px) {
     .home_service_card1 {
         width: 100%;
-        height: max-content;
-        background-size: 115%;
+        height: 400px;
+        background-size: 110%;
         padding: 9%;
         padding-bottom: 25%;
     }
@@ -738,13 +741,14 @@ header {
     .home_service_card1 button {
         padding: 7px 19px;
         border-radius: 30px;
+        top: 72%;
     }
 }
 
-@media (max-width: 1226px) {
+@media (max-width: 1246px) {
     .home_service_card1 {
         width: 100%;
-        height: max-content;
+        height: 400px;
         background-size: 140%;
         padding: 9%;
         padding-bottom: 25%;
@@ -771,13 +775,14 @@ header {
     .home_service_card1 button {
         padding: 7px 19px;
         border-radius: 30px;
+        top: 75%;
     }
 }
 
-@media (max-width: 1064px) {
+@media (max-width: 1065px) {
     .home_service_card1 {
         width: 100%;
-        height: max-content;
+        height: 400px;
         background-size: 150%;
         padding: 9%;
         padding-bottom: 25%;
@@ -810,7 +815,7 @@ header {
 @media (max-width: 991px) {
     .home_service_card1 {
         width: 100%;
-        height: max-content;
+        height: 400px;
         background-size: 100%;
         padding: 9%;
         margin-top: 5%;
@@ -834,7 +839,17 @@ header {
         line-height: 145%;
     }
    
+    .home_service_card1 button {
+        top: 88%;
+    }
+
 }
+@media (max-width: 792px) {
+.home_service_card1 button {
+    top: 83%;
+}
+}
+
 
 @media (max-width: 767px) {
 
@@ -871,19 +886,25 @@ header {
         font-size: 85%;
         line-height: 145%;
     }
+
+    .home_service_card1 button {
+        top: 85%;
+    }
    
 }
 
 @media (max-width: 570px) {
 
     .home_service_card1 {
-        width: 77%;
-        height: max-content;
-        background-size: 100%;
+        width: 80%;
+        height: 400x;
+        background-size: 105%;
         padding: 9%;
         margin-top: 5%;
     }
-    
+    .home_service_card1 button {
+        top: 87%;
+    }
     .home_service_card1 img {
         width: 100%;
         padding-top:1%;
@@ -926,11 +947,15 @@ header {
 
     .home_service_card1 {
         width: 77%;
-        height: max-content;
+        height: 380px;
         background-size: 110%;
         padding: 9%;
         margin-top: 5%;
     }   
+
+    .home_service_card1 button {
+        top: 68%;
+    }
 
     .home_service_card1 img {
         width: 100%;
@@ -956,11 +981,15 @@ header {
 
     .home_service_card1 {
         width: 90%;
-        height: max-content;
+        height: 400px;
         background-size: 160%;
         padding: 9%;
         margin-top: 5%;
     }   
+
+    .home_service_card1 button {
+        top: 70%;
+    }
 
     .home_service_card1 img {
         width: 100%;

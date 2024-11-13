@@ -8,15 +8,21 @@ body {
     overflow-x: hidden;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Tilt+Neon&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Tilt+Neon&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    font-family: "Urbanist", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .urbanist {
     font-family: "Urbanist", sans-serif;
+}
+
+.poppins {
+    font-family: "Poppins", sans-serif;
 }
 
 :root {
@@ -30,24 +36,28 @@ h1 {
     line-height: 70px;
     font-weight: 400;
     letter-spacing: -0.1px;
+    font-family: "Poppins", sans-serif;
 }
 
 h2 {
     font-size: 48px;
     line-height: 64px;
     font-weight: 400;
+    font-family: "Poppins", sans-serif;
 }
 
 h3 {
     font-size: 40px;
     line-height: 46px;
     font-weight: bold;
+    font-family: "Poppins", sans-serif;
 }
 
 h4 {
     font-size: 24px;
     line-height: 28px;
     font-weight: bold;
+    font-family: "Poppins", sans-serif;
 }
 
 h5 {
@@ -56,12 +66,14 @@ h5 {
     font-weight: 600;
     letter-spacing: 0.8px;
     margin-bottom: 11px;
+    font-family: "Poppins", sans-serif;
 }
 
 h6 {
     font-size: 12px;
     line-height: 16px;
     font-weight: 600;
+    font-family: "Poppins", sans-serif;
 }
 
 p {
@@ -567,8 +579,8 @@ header {
 
 /* strong services */
 .home_services {
-   background: url(../img/SERVICESBACKGROUND.png);
-   background-size: 100%;
+    background: url(../img/SERVICESBACKGROUND.png);
+    background-size: 100%;
     width: 100%;
     height: auto;
     padding: 8%;
@@ -589,7 +601,7 @@ header {
 }
 
 .home_service_sec1_content h3 {
-  
+
     font-size: 300%;
     color: var(--theme-color-w);
     font-weight: 700;
@@ -603,7 +615,7 @@ header {
     width: 70%;
 }
 
-.home_service_sec1_btn button{
+.home_service_sec1_btn button {
     background-color: #00000000;
     border: 1px solid #ffffff;
     border-radius: 31px;
@@ -613,7 +625,7 @@ header {
     font-size: 120%;
 }
 
-.home_service_sec1_btn button:hover{
+.home_service_sec1_btn button:hover {
     background-color: #000000;
     border: 1px solid #000000;
     transition: 1s;
@@ -625,7 +637,7 @@ header {
 
 @media (max-width: 1200px) {
     .home_service_sec1_content h3 {
-     
+
         font-size: 260%;
         width: 90%;
     }
@@ -662,7 +674,7 @@ header {
     height: auto;
 }
 
-.home_service_card_col{
+.home_service_card_col {
     width: 100%;
     height: auto;
     overflow: hidden;
@@ -683,7 +695,7 @@ header {
 
 .home_service_card1 img {
     width: 100%;
-    padding-top:2%;
+    padding-top: 2%;
     padding-bottom: 6%;
 }
 
@@ -719,25 +731,25 @@ header {
         padding: 9%;
         padding-bottom: 25%;
     }
-    
+
     .home_service_card1 img {
         width: 100%;
-        padding-top:1%;
+        padding-top: 1%;
         padding-bottom: 6%;
     }
-    
+
     .home_service_card1 h5 {
         font-size: 120%;
         width: 90%;
         padding-bottom: 4%;
     }
-    
+
     .home_service_card1 p {
         width: 100%;
         font-size: 75%;
         line-height: 130%;
     }
-    
+
     .home_service_card1 button {
         padding: 7px 19px;
         border-radius: 30px;
@@ -753,25 +765,25 @@ header {
         padding: 9%;
         padding-bottom: 25%;
     }
-    
+
     .home_service_card1 img {
         width: 100%;
-        padding-top:8%;
+        padding-top: 8%;
         padding-bottom: 6%;
     }
-    
+
     .home_service_card1 h5 {
         font-size: 120%;
         width: 90%;
         padding-bottom: 4%;
     }
-    
+
     .home_service_card1 p {
         width: 100%;
         font-size: 75%;
         line-height: 130%;
     }
-    
+
     .home_service_card1 button {
         padding: 7px 19px;
         border-radius: 30px;
@@ -787,25 +799,25 @@ header {
         padding: 9%;
         padding-bottom: 25%;
     }
-    
+
     .home_service_card1 img {
         width: 100%;
-        padding-top:7%;
+        padding-top: 7%;
         padding-bottom: 6%;
     }
-    
+
     .home_service_card1 h5 {
         font-size: 110%;
         width: 90%;
         padding-bottom: 1%;
     }
-    
+
     .home_service_card1 p {
         width: 100%;
         font-size: 75%;
         line-height: 125%;
     }
-    
+
     .home_service_card1 button {
         padding: 7px 19px;
         border-radius: 30px;
@@ -820,45 +832,46 @@ header {
         padding: 9%;
         margin-top: 5%;
     }
-    
+
     .home_service_card1 img {
         width: 100%;
-        padding-top:7%;
+        padding-top: 7%;
         padding-bottom: 6%;
     }
-    
+
     .home_service_card1 h5 {
         font-size: 120%;
         width: 90%;
         padding-bottom: 1%;
     }
-    
+
     .home_service_card1 p {
         width: 100%;
         font-size: 85%;
         line-height: 145%;
     }
-   
+
     .home_service_card1 button {
         top: 88%;
     }
 
 }
+
 @media (max-width: 792px) {
-.home_service_card1 button {
-    top: 83%;
-}
+    .home_service_card1 button {
+        top: 83%;
+    }
 }
 
 
 @media (max-width: 767px) {
 
-    .home_service_card_col  {
+    .home_service_card_col {
         display: flex;
         flex-direction: column;
         align-items: center;
-        
-}
+
+    }
 
 
     .home_service_card1 {
@@ -868,19 +881,19 @@ header {
         padding: 9%;
         margin-top: 5%;
     }
-    
+
     .home_service_card1 img {
         width: 100%;
-        padding-top:7%;
+        padding-top: 7%;
         padding-bottom: 6%;
     }
-    
+
     .home_service_card1 h5 {
         font-size: 120%;
         width: 90%;
         padding-bottom: 1%;
     }
-    
+
     .home_service_card1 p {
         width: 100%;
         font-size: 85%;
@@ -890,7 +903,7 @@ header {
     .home_service_card1 button {
         top: 85%;
     }
-   
+
 }
 
 @media (max-width: 570px) {
@@ -902,27 +915,29 @@ header {
         padding: 9%;
         margin-top: 5%;
     }
+
     .home_service_card1 button {
         top: 87%;
     }
+
     .home_service_card1 img {
         width: 100%;
-        padding-top:1%;
+        padding-top: 1%;
         padding-bottom: 6%;
     }
-    
+
     .home_service_card1 h5 {
         font-size: 120%;
         width: 90%;
         padding-bottom: 1%;
     }
-    
+
     .home_service_card1 p {
         width: 100%;
         font-size: 85%;
         line-height: 135%;
     }
-   
+
 }
 
 @media (max-width: 466px) {
@@ -933,11 +948,11 @@ header {
         background-size: 110%;
         padding: 9%;
         margin-top: 5%;
-    }   
+    }
 
     .home_service_card1 img {
         width: 100%;
-        padding-top:0%;
+        padding-top: 0%;
         padding-bottom: 1%;
     }
 }
@@ -951,7 +966,7 @@ header {
         background-size: 110%;
         padding: 9%;
         margin-top: 5%;
-    }   
+    }
 
     .home_service_card1 button {
         top: 68%;
@@ -959,7 +974,7 @@ header {
 
     .home_service_card1 img {
         width: 100%;
-        padding-top:0%;
+        padding-top: 0%;
         padding-bottom: 1%;
     }
 
@@ -968,7 +983,7 @@ header {
         width: 90%;
         padding-bottom: 1%;
     }
-    
+
     .home_service_card1 p {
         width: 100%;
         font-size: 70%;
@@ -985,7 +1000,7 @@ header {
         background-size: 160%;
         padding: 9%;
         margin-top: 5%;
-    }   
+    }
 
     .home_service_card1 button {
         top: 70%;
@@ -993,8 +1008,122 @@ header {
 
     .home_service_card1 img {
         width: 100%;
-        padding-top:5%;
+        padding-top: 5%;
         padding-bottom: 1%;
     }
 
 }
+
+
+
+
+/* pool products */
+.home_pool_products {
+    width: 100%;
+    height: auto;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.home_pool_products_content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.home_pool_products_content h3 {
+    font-size: 320%;
+    color: var(--theme-color-b);
+    font-weight: 700;
+    padding-bottom: 1%;
+    width: 55%;
+    text-align: center;
+}
+
+.home_pool_products_content p {
+    font-size: 110%;
+    color: var(--theme-color-b);
+    font-weight: 300;
+    padding-bottom: 1%;
+    width: 60%;
+    text-align: center;
+}
+
+.home_pool_products_img {
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+}
+
+.home_pool_products_col {
+    width: 100%;
+    height: auto;
+    padding: 1%;
+}
+
+.home_pool_products_img1 {
+    width: 100%;
+    height: auto;
+    border: 1px solid #0000002a;
+    border-radius: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.185);
+}
+
+.home_pool_products_img img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
+
+
+
+@media (max-width: 1200px) {
+    .home_pool_products_content h3 {
+        font-size: 260%;
+        width: 65%;
+    }
+
+    .home_pool_products_content p {
+        width: 85%;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .home_pool_products_content h3 {
+        font-size: 300%;
+        width: 95%;
+    }
+
+    .home_pool_products_content p {
+        font-size: 95%;
+        width: 90%;
+    }
+}
+
+    @media (max-width: 767px) {
+        .home_pool_products_content h3 {
+            font-size: 220%;
+        }
+    
+    }
+
+
+
+
+
+
+
+/* pool solutions */
+.vision_mission {
+    width: 100%;
+    height: auto;
+    padding: 8%;
+}
+

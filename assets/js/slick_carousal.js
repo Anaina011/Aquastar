@@ -3,6 +3,7 @@ let isDown = false;
 let startX;
 let scrollLeft;
 
+// For mouse drag
 slider.addEventListener('mousedown', (e) => {
     isDown = true;
     slider.classList.add('active');
@@ -24,6 +25,24 @@ slider.addEventListener('mousemove', (e) => {
     if (!isDown) return;
     e.preventDefault();
     const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * 3; // Scroll-fast
+    const walk = (x - startX) * 1.5; // Adjust scroll speed
+    slider.scrollLeft = scrollLeft - walk;
+});
+
+// For touch drag
+slider.addEventListener('touchstart', (e) => {
+    isDown = true;
+    startX = e.touches[0].pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+});
+
+slider.addEventListener('touchend', () => {
+    isDown = false;
+});
+
+slider.addEventListener('touchmove', (e) => {
+    if (!isDown) return;
+    const x = e.touches[0].pageX - slider.offsetLeft;
+    const walk = (x - startX) * 1.5; // Adjust scroll speed
     slider.scrollLeft = scrollLeft - walk;
 });

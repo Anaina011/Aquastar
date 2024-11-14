@@ -8,6 +8,19 @@ body {
     overflow-x: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+.body {
+    margin: 0;
+}
+
+.row {
+    width: 100%;
+}
+
+
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Tilt+Neon&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 
@@ -1367,7 +1380,7 @@ header {
         margin-top: 2%;
         padding: 10px 6px;
     }
-    
+
     .home_contact_form textarea {
         width: 98%;
         margin-top: 2%;
@@ -1384,3 +1397,244 @@ header {
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+/* footer */
+.footer {
+    width: 100%;
+    height: auto;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background: url(../img/footer_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer_sec {
+    width: 100%;
+    height: auto;
+}
+
+.footer_sec_img {
+    width: 50%;
+    height: auto;
+    padding-bottom: 6%;
+}
+
+.footer_sec p {
+    font-size: 90%;
+    line-height: 150%;
+    width: 80%;
+}
+
+.footer_social_icons {
+    display: flex;
+    width: 60%;
+}
+
+
+.social_box i {
+    color: var(--theme-color-w);
+    font-size: 120%;
+}
+
+.social_box {
+    width: 33px;
+    height: 33px;
+    background-color: #0976db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2%;
+}
+
+.social_box:hover {
+    background-color: var(--theme-color-w);
+    border: 1px solid #0976db;
+}
+
+.social_box:hover .social_box i {
+    color: var(--theme-color);
+}
+
+.footer_sec2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_sec2 h6 {
+    font-size: 100%;
+    font-weight: 800;
+    padding-bottom: 5%;
+    padding-top: 6%;
+}
+
+.footer_sec2 a {
+    font-size: 95%;
+    padding-bottom: 5%;
+    width: 80%;
+    text-decoration: none;
+    color: var(--theme-color-b);
+    font-weight: 400;
+}
+
+.footer_sec3 {
+    width: 100%;
+    height: auto;
+}
+
+.footer_sec3 h6 {
+    font-size: 100%;
+    font-weight: 800;
+    padding-bottom: 5%;
+    padding-top: 6%;
+}
+
+.footer_sec3_links {
+    display: flex;
+}
+
+.footer_sec3_links1 {
+    width: 35px;
+    height: 35px;
+    background-color: #0976db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+}
+
+.footer_sec3_links1 p {
+    margin: 0;
+    color: var(--theme-color-w);
+}
+
+.footer_sec3_links p {
+    font-size: 90%;
+    padding-left: 2%;
+    line-height: 160%;
+}
+
+@media (max-width: 767px) {
+    .footer_sec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer_sec_img {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer_social_icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer_sec2 {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer_sec2 a {
+        text-align: center;
+    }
+
+    .footer_sec3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer_sec3_links p {
+        width: 100%;
+        padding-left: 5%;
+    }
+
+    .footer_sec3_links1 p {
+        width: 30%;
+    }
+
+    .footer_sec2 h6 {
+        padding-bottom: 2%;
+        padding-top: 3%;
+    }
+
+    .footer_sec2 a {
+        padding-bottom: 4%;
+        width: 80%;
+    }
+}
+
+.copyright {
+    width: 100%;
+    height: auto;
+    background-color: var(--theme-color-b);
+    padding: 1%;
+}
+
+.copyright p {
+    color: var(--theme-color-w);
+    font-size: 90%;
+}
+
+@media (max-width: 767px) {
+    .copyright {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
+
+    .copyright p {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+/* Container for the video section */
+.video-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+/* Background video styling */
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+
+

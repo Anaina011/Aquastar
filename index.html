@@ -43,8 +43,8 @@
                 </div>
                 <nav class="nav-links">
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#contact">Contact Us</a></li>
@@ -61,12 +61,43 @@
         </div>
     </header>
 
+<!-- scroll bar -->
+
+    <!-- <div class="scroll-line-container">
+        <svg width="100%" height="2000" xmlns="http://www.w3.org/2000/svg">
+
+            <path class="scroll-line-path" d="M0 0" fill="none" stroke="#0072ff" stroke-width="3"></path>
+
+            <path class="scroll-line-animated" d="" fill="none" stroke="#0976db" stroke-width="7"
+                stroke-dasharray="0 2000"></path>
+        </svg>
+    </div> -->
+
+
+
+    <div class="scroll-line-container">
+        <svg width="2000" height="400" xmlns="http://www.w3.org/2000/svg">
+         
+            <path
+                class="scroll-line-animated"
+                d=""
+                fill="none"
+                stroke="#0072ff"
+                stroke-width="3"
+            ></path>
+        </svg>
+    </div>
+
+
+
 
     <!-- hero setion -->
     <div class="home_hero_sec">
-   
+        <video autoplay muted loop id="myVideo">
+            <source src="assets/video/home-hero_vid.mp4" type="video/mp4">
+        </video>
 
-        <h3 >Aqua Star Complete</h3>
+        <h3>Aqua Star Complete</h3>
         <h2>Pool Care & Solutions</h2>
         <p>Aqua Star Trading & Pool Solutions provides top-quality swimming pool parts, construction, and maintenance
             services across Qatar. We enhance aquatic experiences with innovative solutions for homes, hotels, and
@@ -130,9 +161,12 @@
 
     <!-- home about -->
     <div class="home_about_sec">
-        
+
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 home_about_left">
+                <div class="bubble bubble1"></div>
+                <div class="bubble bubble2"></div>
+                <div class="bubble bubble3"></div>
                 <h3>We Build Everything As Your <span style="color: #0976db;">Dream</span></h3>
                 <p>At AQUA STAR TRADING & POOLS SOLUTIONS, we take pride in being a leading provider of high-quality
                     spare parts for swimming pools and water fountains. We also offer construction and maintenance
@@ -173,7 +207,7 @@
 
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 home_about_left">
-                <img src="assets/img/home_about.png" alt="">
+                <img src="assets/img/about_img_aqua.png" alt="">
             </div>
         </div>
     </div>
@@ -254,6 +288,7 @@
     <!-- pool products -->
 
     <div class="home_pool_products">
+
         <div class="home_pool_products_content">
             <h3>Quality Pool Products for a Perfect Experience</h3>
             <p>Explore our range of expert services designed to meet all your pool and trading needs. From professional
@@ -279,6 +314,7 @@
                     </div>
                 </div>
             </div>
+            <button class="aqua_button mt-4">All Products →</button>
         </div>
     </div>
 
@@ -490,8 +526,9 @@
 
 
 
-<script src="assets/js/mouse.js"></script>
-<script src="assets/js/bubbles.js"></script>
+    <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/mouse.js"></script>
+    <script src="assets/js/bubbles.js"></script>
     <script src="assets/js/navbar.js" defer></script>
     <script src="assets/js/slick_carousal.js"></script>
 

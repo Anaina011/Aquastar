@@ -17,7 +17,9 @@ html {
 }
 
 .row {
-    width: 100%;
+    width: 100% !important;
+    padding: 0;
+    margin: 0;
 }
 
 /* animations */
@@ -135,6 +137,59 @@ a {
     font-weight: 600;
 }
 
+
+/* scroll bar  */
+
+/* .scroll-line-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    pointer-events: none; 
+    overflow: hidden;
+}
+
+.scroll-line-path {
+    opacity: 0.1; 
+}
+
+.scroll-line-animated {
+    stroke-dasharray: 0 2000; 
+    stroke-linecap: round; 
+    transition: stroke-dasharray 0.2s ease-out; 
+}
+ */
+
+
+ body {
+    background-color: #ffffff;
+    position: relative;
+    z-index: 0; 
+}
+
+.scroll-line-container {
+    position: fixed;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    pointer-events: none; 
+    overflow: hidden;
+}
+
+.scroll-line-animated {
+    mix-blend-mode: difference;
+    stroke-linecap: round;
+    transition: opacity 0.2s ease-out; 
+}
+
+
+
+
+
 header {
     width: 100%;
     position: absolute;
@@ -171,6 +226,11 @@ header {
     color: var(--theme-color-b);
     font-size: 110%;
     font-weight: 500;
+}
+
+.nav-links ul li a.active {
+    color: #0072ff; /* Example: Different color for active link */
+    font-weight: bold; /* Optional: Make it stand out */
 }
 
 /* Contact Info */
@@ -247,6 +307,30 @@ header {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
+/* Active link style for normal and desktop devices */
+@media (min-width: 992px) {
+    .nav-links ul li a.active {
+        color: #0072ff; /* Blue for active link */
+        font-weight: bold; /* Optional bold styling */
+    }
+
+    .nav-links ul li a:hover{
+        color: var(--theme-color);
+    }
+}
+
+/* Active link style for mobile devices (hamburger menu) */
+@media (max-width: 991px) {
+    .nav-links ul li a.active {
+        color: #0072ff; /* Blue font color */
+        background-color: rgb(0, 0, 0); /* White background */
+        font-weight: bold;
+        padding: 10px 15px; /* Add padding for better appearance */
+        border-radius: 5px; /* Rounded corners */
+    }
+}
+
+
 /* Responsive Styles */
 @media (max-width: 991px) {
 
@@ -269,10 +353,10 @@ header {
         top: 75px;
         right: 20px;
         width: 250px;
-        background-color: #0099ff;
-        color: white;
+        background-color: #0099ff8e;
+        color: rgb(0, 0, 0);
         padding: 20px;
-        border-radius: 5px;
+        border-radius: 30px;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         z-index: 999;
         text-align: left;
@@ -315,10 +399,10 @@ header {
     padding-left: 8%;
     padding-right: 8%;
     padding-bottom: 6%;
-    background: url('../img/home_hero_.png');
+    /* background: url('../img/home_hero_.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
     /* height: 600px; */
     padding-top: 25%;
 }
@@ -432,7 +516,7 @@ header {
 }
 
 .bubble1 {
-    background-image: url('../img/bubble_l.png');
+    background-image: url('../img/BLUE_BUBBLE.png');
     top: 20%;
     left: 10%;
     animation: float1 10s infinite alternate ease-in-out;
@@ -571,6 +655,8 @@ header {
 .home_about_left {
     width: 100%;
     height: auto;
+    position: relative;
+    overflow: hidden;
 }
 
 .home_about_left h3 {
@@ -647,6 +733,11 @@ header {
 .home_about_left img {
     width: 95%;
     height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home_about_left img:hover {
+    transform: scale(1.05); 
 }
 
 
@@ -873,6 +964,11 @@ header {
     border-radius: 30px;
     top: 72%;
     position: absolute;
+}
+
+.home_service_card1 button:hover {
+    color: var(--theme-color);
+    background-color: var(--theme-color-w);
 }
 
 @media (max-width: 1426px) {
@@ -1210,6 +1306,10 @@ header {
     padding-left: 10%;
     padding-right: 10%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .home_pool_products_col {
@@ -1224,6 +1324,11 @@ header {
     border: 1px solid #0000002a;
     border-radius: 30px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.185);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home_pool_products_img1:hover {
+    transform: scale(1.05); 
 }
 
 .home_pool_products_img img {
@@ -1231,8 +1336,6 @@ header {
     height: auto;
     border-radius: 30px;
 }
-
-
 
 
 @media (max-width: 1200px) {
@@ -1845,3 +1948,82 @@ position: relative;
     z-index: 1000; /* Ensure it stays on top of all elements */
 }
 
+
+
+
+#myVideo {
+    width: 100%;
+    height: 55rem;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    overflow: hidden;
+ }
+
+ @media (max-width: 1500px) {
+  #myVideo {
+    width: 100%;
+    height: 47rem;
+    overflow: hidden;
+ }
+ }
+
+ @media (max-width: 1200px) {
+    #myVideo {
+      width: 100%;
+      height: 43rem;
+      overflow: hidden;
+   }
+   }
+  
+
+ @media (max-width: 991px) {
+  #myVideo {
+    height: 38rem;
+ }
+ }
+
+ @media (max-width: 767px) {
+  #myVideo {
+    height: 36rem;
+ }
+ }
+
+ @media (max-width: 653px) {
+    #myVideo {
+      height: 38rem;
+   }
+   }
+
+   @media (max-width: 514px) {
+    #myVideo {
+      height: 43rem;
+   }
+
+   }
+
+   @media (max-width: 500px) {
+    #myVideo {
+      height: 37rem;
+   }
+
+   
+   .home_hero_sec {
+    margin-bottom: 25%;
+   }
+   }
+
+   @media (max-width: 270px) {
+    #myVideo {
+      height: 42rem;
+   }
+
+   
+   .home_hero_sec {
+    margin-bottom: 25%;
+   }
+   }

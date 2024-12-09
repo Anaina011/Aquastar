@@ -3678,13 +3678,16 @@ header {
 }
 
 .category-buttons button:hover {
-    background-color: #0056b3;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .category-buttons button.active {
-    background-color: #007bff;
-    color: #fff;
+    background-color: #0056b3; /* Active button color */
+    color: #ffffff; /* Active button text color */
+    border: 1px solid #000000; /* Optional: border color for active state */
 }
+
 
 .category-buttons::-webkit-scrollbar {
     height: 10px;

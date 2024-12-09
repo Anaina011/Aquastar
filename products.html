@@ -32,6 +32,7 @@
         .footer {
             background-color: #fff;
         }
+
     </style>
     <div class="mouse-bubble"></div>
 
@@ -107,7 +108,8 @@
                 <div class="home_contact_form_sec1">
                     <input type="text" placeholder="Name" name="name" id="name" required><br>
                     <input type="email" placeholder="Email" name="email" id="email" required><br>
-                </div>
+                    <input type="hidden" value="product page" id="page_id" name="page_id">
+
             
                 <textarea type="text" placeholder="Property Address" name="propertyaddress" id="propertyadress" required></textarea><br>
             
@@ -280,6 +282,15 @@
             // Event listener for category buttons
             categoryButtonsContainer.addEventListener("click", (event) => {
                 if (event.target.tagName === "BUTTON") {
+                        // Remove active class from all buttons
+                        document.querySelectorAll(".category-buttons button").forEach((btn) => {
+                        btn.classList.remove("active");
+                    });
+
+                    // Add active class to the clicked button
+                    event.target.classList.add("active");
+
+                    // Filter products by category
                     const category = event.target.dataset.category;
                     const filteredProducts = category === "all"
                         ? products

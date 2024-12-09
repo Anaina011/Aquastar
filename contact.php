@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $page_id = htmlspecialchars(trim($_POST['page_id']));
 
     // Email recipient and subject
-    $to = "sales@aquastarqatar.com, aquastarqatar1@gmail.com"; // Replace with your email address
+  $to = "sales@aquastarqatar.com, aquastarqatar1@gmail.com"; // Replace with your email address
     $bcc = "edb@illforddigital.com";
     $subject = "AQUASTAR - Contact Request from $page_id";
 

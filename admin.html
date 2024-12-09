@@ -253,21 +253,15 @@
     </script>
 
     <script>
-        // Firebase Authentication to check if a user is logged in
-        firebase.auth().onAuthStateChanged(function (user) {
-            if (user) {
-                // User is signed in, display the user name
-                document.getElementById('displayUserName').textContent = user.email;
-            } else {
-                // No user is signed in, redirect to login page
-                window.location.href = 'login.html';
-            }
-        });
+
+
         function logoutUser() {
             console.log("Logout initiated");
             if (confirm('Are you sure you want to logout?')) {
                 firebase.auth().signOut()
                     .then(() => {
+                        localStorage.clear(); // You can use sessionStorage.clear() if you're using sessionStorage
+                        sessionStorage.clear();
                         console.log("Logout successful");
                         window.location.href = 'index.html';
                     })
@@ -281,17 +275,12 @@
 
 
 
-
-
-
-
-
         // ********************************************************************************************
         // Function to logout user after 1 hour of inactivity since last user activity
         // ********************************************************************************************
 
         window.onload = function () {
-            console.log(loaded);
+            console.log('loaded');
             // Function to handle user logout
             function logoutUser() {
                 console.log("Logging out user due to inactivity or tab/window close");
@@ -319,11 +308,11 @@
                     var currentTime = new Date().getTime();
                     var timeSinceLogin = currentTime - loginTime;
 
-                    if (timeSinceLogin > 60 * 1 * 1000) { // 1 hour
+                    if (timeSinceLogin > 10 * 1 * 1000) { // 1 hour
                         logoutUser();
                     } else {
                         // Reset the inactivity timeout to check again after the remaining time
-                        var remainingTime = 60 * 1 * 1000 - timeSinceLogin;
+                        var remainingTime = 10 * 1 * 1000 - timeSinceLogin;
                         clearTimeout(inactivityTimeout);
                         inactivityTimeout = setTimeout(logoutUser, remainingTime);
                     }
@@ -362,84 +351,28 @@
             });
 
         };
+
+
+
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // In your login.html page (after successful authentication):
+            var auth = firebase.auth();
+            auth.onAuthStateChanged(function (user) {
+                if (!user) {
+                    // User is authenticated, allow access to admin.html
+                    window.location.href = 'index.html';
+                }
+            });
+        });
     </script>
 
 
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-
-            console.log('loaded');
-            // Function to handle user logout
-            function logoutUser() {
-                console.log("Logging out user due to inactivity or tab/window close");
-                auth.signOut().then(() => {
-                    // Clear any user session data
-                    localStorage.clear();
-                    sessionStorage.clear();
-
-                    // Redirect to login page after logout
-                    window.location.href = 'index.html';
-                });
-            }
-
-            // Function to set login time
-            function setLoginTime() {
-                var loginTime = new Date().getTime();
-                localStorage.setItem('loginTime', loginTime);
-                console.log("Login time set at: " + new Date(loginTime));
-            }
-
-            // Function to check inactivity based on login time
-            function checkInactivity() {
-                var loginTime = localStorage.getItem('loginTime');
-                if (loginTime) {
-                    var currentTime = new Date().getTime();
-                    var timeSinceLogin = currentTime - loginTime;
-
-                    if (timeSinceLogin > 60 * 1 * 1000) { // 1 hour
-                        logoutUser();
-                    } else {
-                        // Reset the inactivity timeout to check again after the remaining time
-                        var remainingTime = 60 * 1 * 1000 - timeSinceLogin;
-                        clearTimeout(inactivityTimeout);
-                        inactivityTimeout = setTimeout(logoutUser, remainingTime);
-                    }
-                }
-            }
-
-            // Set login time on load if not already set
-            if (!localStorage.getItem('loginTime')) {
-                setLoginTime();
-            }
-
-            // Check inactivity on page load/reload
-            checkInactivity();
-
-            // Event listeners for user activity to reset login time
-            document.addEventListener("mousemove", function () {
-                setLoginTime();
-                checkInactivity();
-            });
-
-            document.addEventListener("keypress", function () {
-                setLoginTime();
-                checkInactivity();
-            });
-
-            // Variable to store the inactivity timeout
-            var inactivityTimeout;
-
-            // Log out the user when closing the tab or browser
-            window.addEventListener("beforeunload", function () {
-                logoutUser();
-            });
-
-            window.addEventListener('unload', function () {
-                logoutUser();
-            });
-
-
 
 
 
@@ -667,7 +600,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
     <script src="assets/js/fireconfig.js"></script>
     <script src="assets/js/navbar.js" defer></script>
-    <script src="assets/js/credentials.js"></script>
+    <!-- <script src="assets/js/credentials.js"></script> -->
 </body>
 
 </html>

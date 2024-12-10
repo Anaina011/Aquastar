@@ -1,0 +1,50 @@
+{
+    "hashtags": {
+        "vbb": {
+            "hello.html": {
+                "title": "hello ",
+                "featuredImage": "https:\/\/aquastarqatar.com\/blog\/uploads\/transport-logistics-concept.webp",
+                "url": "https:\/\/aquastarqatar.com\/blog\/hello",
+                "category": "Blog",
+                "visibility": "public"
+            },
+            "aqua-star.html": {
+                "title": "aqua star ",
+                "featuredImage": "https:\/\/aquastarqatar.com\/blog\/uploads\/locationmap.png",
+                "url": "https:\/\/aquastarqatar.com\/blog\/aqua-star",
+                "category": "Blog",
+                "visibility": "public"
+            },
+            "aqua.html": {
+                "title": "Aqua",
+                "featuredImage": "https:\/\/aquastarqatar.com\/blog\/uploads\/TERMSANDCONDITIONS.png",
+                "url": "https:\/\/aquastarqatar.com\/blog\/aqua",
+                "category": "Blog",
+                "visibility": "public"
+            }
+        },
+        "hh": {
+            "hello.html": {
+                "title": "hello ",
+                "featuredImage": "https:\/\/aquastarqatar.com\/blog\/uploads\/transport-logistics-concept.webp",
+                "url": "https:\/\/aquastarqatar.com\/blog\/hello",
+                "category": "Blog",
+                "visibility": "public"
+            },
+            "aqua-star.html": {
+                "title": "aqua star ",
+                "featuredImage": "https:\/\/aquastarqatar.com\/blog\/uploads\/locationmap.png",
+                "url": "https:\/\/aquastarqatar.com\/blog\/aqua-star",
+                "category": "Blog",
+                "visibility": "public"
+            },
+            "aqua.html": {
+                "title": "Aqua",
+                "featuredImage": "https:\/\/aquastarqatar.com\/blog\/uploads\/TERMSANDCONDITIONS.png",
+                "url": "https:\/\/aquastarqatar.com\/blog\/aqua",
+                "category": "Blog",
+                "visibility": "public"
+            }
+        }
+    }
+}

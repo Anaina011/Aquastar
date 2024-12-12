@@ -227,13 +227,14 @@ body {
 
 .hashtagpostcardimg {
     width: 100%;
-    height: 250px;
+    height: 200px;
     overflow: hidden !important;
 }
 
 .hashtagpostcardimg img {
-    width: 100% !important;
-    height: max-content !important;
+    /* height: 100% !important; */
+    width: 100%;
+    /* height: max-content !important; */
 }
 
 .categorypostscontainer {

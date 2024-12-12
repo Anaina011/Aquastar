@@ -315,7 +315,19 @@ header {
 }
 
 /* Active link style for normal and desktop devices */
+@media (max-width: 1128px) {
+    
+    .nav-links ul li a {
+        font-size: 100%;
+    }
+}
+
 @media (min-width: 992px) {
+    .cta-button {
+        font-size: 90%;
+        padding: 14px 25px;
+    }
+
     .nav-links ul li a.active {
         color: #0072ff;
         /* Blue for active link */
@@ -345,7 +357,7 @@ header {
 
 
 /* Responsive Styles */
-@media (max-width: 991px) {
+@media (max-width: 1090px) {
 
     /* Hide contact info and navigation links on mobile */
     .nav-links,
@@ -4292,6 +4304,94 @@ header {
 
 @media (max-width: 500px) {
     .home_hero_sec7 h3 {
+        font-size: 2rem;
+        padding-top: 60%;
+    }
+
+}
+
+
+.home_hero_sec8 {
+    padding-left: 12%;
+    padding-right: 8%;
+    padding-bottom: 6%;
+    background: url('../img/sitemapimage.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    padding-top: 25%;
+}
+
+.home_hero_sec8 h3 {
+    font-size: 3.5rem;
+    color: var(--theme-color-b);
+    font-weight: 600;
+
+}
+
+
+.home_hero_sec8 a {
+    width: 60%;
+    font-size: 100%;
+    color: var(--theme-color-b);
+    text-decoration: none;
+}
+
+
+@media (max-width: 1200px) {
+    .home_hero_sec8 h3 {
+        font-size: 3.5rem;
+    }
+
+    .home_hero_sec8 h2 {
+        font-size: 4rem;
+    }
+
+    .home_hero_sec8 p {
+        width: 70%;
+        font-size: 100%;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .home_hero_sec8 h3 {
+        font-size: 3rem;
+        padding-top: 15%;
+    }
+
+    .home_hero_sec8 h2 {
+        font-size: 3.5rem;
+    }
+
+    .home_hero_sec8 p {
+        width: 90%;
+        font-size: 100%;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .home_hero_sec8 h3 {
+        font-size: 2rem;
+        padding-top: 40%;
+    }
+
+    .home_hero_sec8 h2 {
+        font-size: 2.5rem;
+    }
+
+    .home_hero_sec8 p {
+        width: 90%;
+        font-size: 80%;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+    .home_hero_sec8 h3 {
         font-size: 2rem;
         padding-top: 60%;
     }

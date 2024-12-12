@@ -590,6 +590,10 @@ $robotsMeta = isset($_POST['robotsMetaInput']) ? $_POST['robotsMetaInput'] : 'in
         .base_container {
             padding-top: 15%;
         }
+
+        header {
+            box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+        }
         
         @media (max-width: 768px) {
             .container h1 {

@@ -182,25 +182,25 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $rootPath = 'https://aquastarqatar.com/blog/';
     $language = 'en_US';
     $openGraphType = 'article';
-    $publisherUrl = 'https://www.facebook.com/aquastar';
+    $publisherUrl = 'https://www.facebook.com/profile.php?id=61569869556896';
     $publisherName = 'AQUA STAR';
-    $publisherTwitterId = '@aquastarqatar';
+    $publisherTwitterId = 'https://x.com/star_aqua75976';
     $publisherLogo = 'https://aquastarqatar.com/img/Aquastar_Logo.webp';
     $publisherTagline = 'You can dream, create, design, and build the most wonderful place in the world.';
-    $favioconLink = 'https://aquastarqatar.com/img/favicon.jpeg';
+    $favioconLink = 'https://aquastarqatar.com/favicon.png';
     $blogHome = 'https://aquastarqatar.com/blog.html';
-    $facebookProfileLink = 'https://www.facebook.com/incshipping';
-    $instagramProfileLink = 'https://www.instagram.com/incexpressshipping/';
-    $threadsProfileLink = 'https://www.instagram.com/incexpressshipping/';
-    $twitterProfileLink = 'https://www.instagram.com/incexpressshipping/';
-    $linkedinProfileLink = 'https://www.linkedin.com/company/inc-express-shipping-l-l-c/';
+    $facebookProfileLink = 'https://www.facebook.com/profile.php?id=61569869556896';
+    $instagramProfileLink = 'https://www.instagram.com/aqua_star_qatar/';
+    $threadsProfileLink = 'https://www.instagram.com/aqua_star_qatar/';
+    $twitterProfileLink = 'https://x.com/star_aqua75976';
+    $linkedinProfileLink = 'https://www.linkedin.com/in/aqua-star-2756b7341/';
     $whatsappProfileLink = 'https://wa.me/+97433166688';
-    $youtubeProfileLink = 'https://www.instagram.com/incexpressshipping/';
+    $youtubeProfileLink = 'https://www.instagram.com/aqua_star_qatar/';
     $publisherAddress = 'Building No. 09, Shop 39 & 41, Barwa Village, Al Wakara';
     $publisherMobile = '+97444140011';
     $publisherEmail = 'sales@aquastarqatar.com';
     $privacyPolicy = 'https://aquastarqatar.com/privacy-policy.html';
-    $termsAndCondition = 'https://aquastarqatar.com/terms-and-condition.html';
+    $termsAndCondition = 'https://aquastarqatar.com/terms-and-conditions.html';
     $siteMap = 'https://aquastarqatar.com/sitemap.html';
 
     // Processed variables
@@ -252,7 +252,7 @@ $headScriptsTemplate = '
         <meta name="geo.position" content="$geoPosition" />
         <meta name="ICBM" content="$ICBM" />
         <link rel="shortcut icon" type="image/jpg" href="$favioconLink" />
-        <link rel="canonical" href="$canonicalUrl" />
+        <link rel="canonical" href="$canonicalUrl" />   
         <meta property="og:locale" content="$language" />
         <meta property="og:type" content="$openGraphType" />
         <meta property="og:title" content="$seoTitle" />
@@ -577,6 +577,7 @@ $robotsMeta = isset($_POST['robotsMetaInput']) ? $_POST['robotsMetaInput'] : 'in
         
         <link rel="stylesheet" href="blog.css"/>
         <link rel="stylesheet" href="stylesheet.css"/>
+        <link rel="shortcut icon" type="image/jpg" href="../favicon.png">
         <!-- bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -691,19 +692,27 @@ $robotsMeta = isset($_POST['robotsMetaInput']) ? $_POST['robotsMetaInput'] : 'in
                 <p>You can dream, create, design, and
                     build the most wonderful place in the
                     world.</p>
-                <div class="footer_social_icons">
-                    <div class="social_box">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </div>
-                    <div class="social_box">
-                        <i class="fa-brands fa-twitter"></i>
-                    </div>
-                    <div class="social_box">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </div>
-                    <div class="social_box">
-                        <i class="fa-brands fa-instagram"></i>
-                    </div>
+                    <div class="footer_social_icons">
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=61569869556896">
+                        <div class="social_box">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://x.com/star_aqua75976">
+                        <div class="social_box">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/in/aqua-star-2756b7341/">
+                        <div class="social_box">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/aqua_star_qatar/">
+                        <div class="social_box">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 footer_sec2">
@@ -756,17 +765,20 @@ $robotsMeta = isset($_POST['robotsMetaInput']) ? $_POST['robotsMetaInput'] : 'in
     </div>
     <div class="copyright">
         <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
                 <p>© 2024 All Rights Reserved</p>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-2 col-xl-2">
                 <p> <a style="text-decoration: none; color: #fff;" href="terms-and-conditions.html">Terms &
                         Conditions</a></p>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-2 col-xl-2">
                 <p> <a style="text-decoration: none; color: #fff;" href="privacy-policy.html">Privacy & Policy</a></p>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-1 col-xl-1">
+                <p> <a style="text-decoration: none; color: #fff;" href="sitemap.html">Site Map</a></p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
                 <p>Designed and Developed by: <a target="_blank" style="text-decoration: none; color: #fff;"
                         href="https://illforddigital.com/">Illford Digital</a> </p>
             </div>

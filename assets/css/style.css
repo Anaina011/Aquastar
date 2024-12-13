@@ -1986,6 +1986,10 @@ header {
     font-size: 120%;
 }
 
+.footer_social_icons a {
+    margin-right: 2%;
+}
+
 .social_box {
     width: 33px;
     height: 33px;
@@ -2146,6 +2150,12 @@ header {
 .copyright p {
     color: var(--theme-color-w);
     font-size: 90%;
+}
+
+@media (max-width: 991px) {
+    .copyright {
+        padding-left: 6%; 
+    }
 }
 
 @media (max-width: 767px) {

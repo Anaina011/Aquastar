@@ -193,7 +193,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $instagramProfileLink = 'https://www.instagram.com/aqua_star_qatar/';
     $threadsProfileLink = 'https://www.instagram.com/aqua_star_qatar/';
     $twitterProfileLink = 'https://x.com/star_aqua75976';
-    $linkedinProfileLink = 'https://www.linkedin.com/in/aqua-star-2756b7341/';
+    $linkedinProfileLink = 'https://www.linkedin.com/company/105314378/admin/dashboard/';
     $whatsappProfileLink = 'https://wa.me/+97433166688';
     $youtubeProfileLink = 'https://www.instagram.com/aqua_star_qatar/';
     $publisherAddress = 'Building No. 09, Shop 39 & 41, Barwa Village, Al Wakara';
@@ -703,7 +703,7 @@ $robotsMeta = isset($_POST['robotsMetaInput']) ? $_POST['robotsMetaInput'] : 'in
                             <i class="fa-brands fa-twitter"></i>
                         </div>
                     </a>
-                    <a target="_blank" href="https://www.linkedin.com/in/aqua-star-2756b7341/">
+                    <a target="_blank" href="https://www.linkedin.com/company/105314378/admin/dashboard/">
                         <div class="social_box">
                             <i class="fa-brands fa-linkedin-in"></i>
                         </div>

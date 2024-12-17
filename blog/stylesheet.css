@@ -406,7 +406,19 @@ header {
 }
 
 /* Active link style for normal and desktop devices */
+@media (max-width: 1128px) {
+    
+    .nav-links ul li a {
+        font-size: 100%;
+    }
+}
+
 @media (min-width: 992px) {
+    .cta-button {
+        font-size: 90%;
+        padding: 14px 25px;
+    }
+
     .nav-links ul li a.active {
         color: #0072ff;
         /* Blue for active link */
@@ -436,7 +448,7 @@ header {
 
 
 /* Responsive Styles */
-@media (max-width: 991px) {
+@media (max-width: 1090px) {
 
     /* Hide contact info and navigation links on mobile */
     .nav-links,
@@ -551,7 +563,7 @@ header {
     background-color: #0976db;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     margin-right: 2%;
     color: var(--theme-color-w);
 }

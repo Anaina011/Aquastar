@@ -687,7 +687,7 @@ $robotsMeta = isset($_POST['robotsMetaInput']) ? $_POST['robotsMetaInput'] : 'in
         <div class="row">
             <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 footer_sec">
                 <div class="footer_sec_img">
-                    <a href="index.html"> <img src="assets/img/Aquastar_footer_logo.webp" alt=""></a>
+                    <a href="index.html"> <img src="../assets/img/Aquastar_footer_logo.webp" alt=""></a>
                 </div>
                 <p>You can dream, create, design, and
                     build the most wonderful place in the
@@ -717,13 +717,13 @@ $robotsMeta = isset($_POST['robotsMetaInput']) ? $_POST['robotsMetaInput'] : 'in
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 footer_sec2">
                 <h6>Quick Links</h6>
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="services.html">Services</a>
-                <a href="products.html">Products</a>
-                <a href="portfolio.html">Portfolio</a>
+                <a href="../index.html">Home</a>
+                <a href="../about.html">About Us</a>
+                <a href="../services.html">Services</a>
+                <a href="../products.html">Products</a>
+                <a href="../portfolio.html">Portfolio</a>
                 <!-- <a href="contact.html">Contact</a> -->
-                <a href="contact.html">Contact Us</a>
+                <a href="../contact.html">Contact Us</a>
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 footer_sec2">
                 <h6>Quick Links</h6>
@@ -769,14 +769,14 @@ $robotsMeta = isset($_POST['robotsMetaInput']) ? $_POST['robotsMetaInput'] : 'in
                 <p>© 2024 All Rights Reserved</p>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-2 col-xl-2">
-                <p> <a style="text-decoration: none; color: #fff;" href="terms-and-conditions.html">Terms &
+                <p> <a style="text-decoration: none; color: #fff;" href="../terms-and-conditions.html">Terms &
                         Conditions</a></p>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-2 col-xl-2">
-                <p> <a style="text-decoration: none; color: #fff;" href="privacy-policy.html">Privacy & Policy</a></p>
+                <p> <a style="text-decoration: none; color: #fff;" href="../privacy-policy.html">Privacy & Policy</a></p>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-1 col-xl-1">
-                <p> <a style="text-decoration: none; color: #fff;" href="sitemap.html">Site Map</a></p>
+                <p> <a style="text-decoration: none; color: #fff;" href="../sitemap.html">Site Map</a></p>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
                 <p>Designed and Developed by: <a target="_blank" style="text-decoration: none; color: #fff;"
